@@ -1,0 +1,41 @@
+{
+	"name": "parse-m3u8",
+	"version": "0.1.0",
+	"description": "Parse M3U8",
+	"repository": "shinnn/parse-m3u8",
+	"author": "Shinnosuke Watanabe (https://github.com/shinnn)",
+	"license": "ISC",
+	"scripts": {
+		"pretest": "eslint .",
+		"test": "nyc --reporter=html --reporter=text node test.js"
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"parse",
+		"m3u",
+		"m3u8",
+		"hls",
+		"live",
+		"streaming",
+		"video",
+		"movie",
+		"playlist",
+		"data"
+	],
+	"dependencies": {
+		"inspect-with-kind": "^1.0.4",
+		"is-plain-obj": "^1.1.0",
+		"m3u8-parser": "^4.2.0"
+	},
+	"devDependencies": {
+		"@shinnn/eslint-config-node": "^6.0.0",
+		"eslint": "^5.2.0",
+		"nyc": "^12.0.2",
+		"tape": "^4.9.1"
+	},
+	"eslintConfig": {
+		"extends": "@shinnn/node"
+	}
+}
