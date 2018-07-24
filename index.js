@@ -1,6 +1,5 @@
 'use strict';
 
-const URLConstructor = global.URL || require('url').URL; // eslint-disable-line node/prefer-global/url
 const {inspect} = require('util');
 
 const {Parser} = require('m3u8-parser');
@@ -40,12 +39,12 @@ module.exports = function parseM3u8(...args) {
 
 		if (typeof baseUri === 'string') {
 			try {
-				new URLConstructor(baseUri);
+				new URL(baseUri);
 			} catch (err) {
 				err.message = `${URI_ERROR}, but got an invalid URL string ${inspect(baseUri)}.`;
 				throw err;
 			}
-		} else if (baseUri !== undefined && !(baseUri instanceof URLConstructor)) {
+		} else if (baseUri !== undefined && !(baseUri instanceof URL)) {
 			throw new TypeError(`${URI_ERROR}, but got ${inspectWithKind(baseUri)}.`);
 		}
 	}
@@ -59,7 +58,7 @@ module.exports = function parseM3u8(...args) {
 
 	if (options.baseUri !== undefined) {
 		for (const item of [...manifest.playlists || [], ...manifest.segments]) {
-			item.uri = new URLConstructor(item.uri, options.baseUri).toString();
+			item.uri = new URL(item.uri, options.baseUri).toString();
 		}
 	}
 
