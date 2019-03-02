@@ -31,7 +31,7 @@ parseM3u8(`#EXTM3U
 
 ## Installation
 
-[Use](https://docs.npmjs.com/cli/install) [npm](https://docs.npmjs.com/getting-started/what-is-npm).
+[Use](https://docs.npmjs.com/cli/install) [npm](https://docs.npmjs.com/about-npm/).
 
 ```
 npm install parse-m3u8
@@ -93,4 +93,4 @@ parseM3u8(source, {baseUri: 'https://example.org/assets/playlists/'}).playlists;
 
 ## License
 
-[ISC License](./LICENSE) © 2018 Shinnosuke Watanabe
+[ISC License](./LICENSE) © 2018 - 2019 Shinnosuke Watanabe

@@ -59,37 +59,37 @@ b.m3u8`, {baseUri: new URL('https://example.org')}).playlists,
 
 	t.throws(
 		() => parseM3u8(new Set()),
-		/^TypeError.*Expected an M3U8 file contents \(<string>\), but got a non-string value Set {}\./,
+		/^TypeError.*Expected an M3U8 file contents \(<string>\), but got a non-string value Set \{\}\./u,
 		'should throw an error when the first argument is not a string.'
 	);
 
 	t.throws(
 		() => parseM3u8('', new Uint32Array()),
-		/^TypeError.*Expected a parse-m3u8 options object \(<Object>\), but got Uint32Array \[ {2}]\./,
+		/^TypeError.*Expected a parse-m3u8 options object \(<Object>\), but got Uint32Array \[\]\./u,
 		'should throw an error when the second argument is not a plain object.'
 	);
 
 	t.throws(
 		() => parseM3u8('', {baseUri: -0}),
-		/^TypeError.*Expected `baseUri` option to be either a <URL> or a <string> of a URL, but got -0 \(number\)\./,
+		/^TypeError.*Expected `baseUri` option to be either a <URL> or a <string> of a URL, but got -0 \(number\)\./u,
 		'should throw an error when `baseUri` option is neither string nor URL.'
 	);
 
 	t.throws(
 		() => parseM3u8('', {baseUri: '\t\n'}),
-		/^TypeError.*Expected `baseUri` option to be either a <URL> or a <string> of a URL, but got an invalid URL string '\\t\\n'\./,
+		/^TypeError.*Expected `baseUri` option to be either a <URL> or a <string> of a URL, but got an invalid URL string '\\t\\n'\./u,
 		'should throw an error when `baseUri` option is an invalid URL string.'
 	);
 
 	t.throws(
 		() => parseM3u8(),
-		/^RangeError.*Expected 1 or 2 arguments \(<string>\[, <Object>]\), but got no arguments\./,
+		/^RangeError.*Expected 1 or 2 arguments \(<string>\[, <Object>\]\), but got no arguments\./u,
 		'should throw an error when it takes no arguments.'
 	);
 
 	t.throws(
 		() => parseM3u8('', {}, {}),
-		/^RangeError.*Expected 1 or 2 arguments \(<string>\[, <Object>]\), but got 3 arguments\./,
+		/^RangeError.*Expected 1 or 2 arguments \(<string>\[, <Object>\]\), but got 3 arguments\./u,
 		'should throw an error when it takes too many arguments.'
 	);
 
