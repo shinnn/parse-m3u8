@@ -2,7 +2,7 @@
 
 [![npm version](https://img.shields.io/npm/v/parse-m3u8.svg)](https://www.npmjs.com/package/parse-m3u8)
 [![Build Status](https://travis-ci.com/shinnn/parse-m3u8.svg?branch=master)](https://travis-ci.com/shinnn/parse-m3u8)
-[![Coverage Status](https://img.shields.io/coveralls/shinnn/parse-m3u8.svg)](https://coveralls.io/github/shinnn/parse-m3u8?branch=master)
+[![codecov](https://codecov.io/gh/shinnn/parse-m3u8/branch/master/graph/badge.svg)](https://codecov.io/gh/shinnn/parse-m3u8)
 
 A [Node.js](https://nodejs.org/) module to parse [M3U8](https://en.wikipedia.org/wiki/M3U#M3U8)
 
@@ -53,7 +53,7 @@ It parses a given `string` with [m3u8-parser](https://github.com/videojs/m3u8-pa
 
 #### option.baseUri
 
-Type: `string` or [`URL`](https://nodejs.org/api/url.html#url_class_url)
+Type: `string | URL`
 
 Rebase `uri` properties of each items in `playlists` and `segments` to this URL.
 
