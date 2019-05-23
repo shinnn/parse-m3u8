@@ -2,12 +2,12 @@
 	"name": "parse-m3u8",
 	"version": "1.0.0",
 	"description": "Parse M3U8",
-	"author": "Shinnosuke Watanabe (https://github.com/shinnn)",
+	"author": "Watanabe Shinnosuke (https://github.com/shinnn)",
 	"repository": "shinnn/parse-m3u8",
 	"license": "ISC",
 	"scripts": {
 		"pretest": "eslint .",
-		"test": "coverage test.js"
+		"test": "coverage test.mjs"
 	},
 	"files": [
 		"index.js"
@@ -26,14 +26,14 @@
 	],
 	"dependencies": {
 		"inspect-with-kind": "^1.0.5",
-		"is-plain-obj": "^1.1.0",
+		"is-plain-obj": "^2.0.0",
 		"m3u8-parser": "^4.3.0"
 	},
 	"devDependencies": {
-		"@shinnn/eslint-config": "^6.10.1",
-		"coverage": "^0.1.0",
+		"@shinnn/eslint-config": "^6.10.4",
+		"coverage": "^0.3.3",
 		"eslint": "^5.16.0",
-		"tape": "^4.10.1"
+		"testit": "^3.1.0"
 	},
 	"eslintConfig": {
 		"extends": "@shinnn"

@@ -93,4 +93,4 @@ parseM3u8(source, {baseUri: 'https://example.org/assets/playlists/'}).playlists;
 
 ## License
 
-[ISC License](./LICENSE) © 2018 - 2019 Shinnosuke Watanabe
+[ISC License](./LICENSE) © 2018 - 2019 Watanabe Shinnosuke
