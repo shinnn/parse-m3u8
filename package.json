@@ -1,6 +1,6 @@
 {
 	"name": "parse-m3u8",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Parse M3U8",
 	"author": "Watanabe Shinnosuke (https://github.com/shinnn)",
 	"repository": "shinnn/parse-m3u8",
