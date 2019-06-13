@@ -1,7 +1,7 @@
 # parse-m3u8
 
 [![npm version](https://img.shields.io/npm/v/parse-m3u8.svg)](https://www.npmjs.com/package/parse-m3u8)
-[![Build Status](https://travis-ci.com/shinnn/parse-m3u8.svg?branch=master)](https://travis-ci.com/shinnn/parse-m3u8)
+[![GitHub Actions](https://action-badges.now.sh/shinnn/parse-m3u8)](https://wdp9fww0r9.execute-api.us-west-2.amazonaws.com/production/results/shinnn/parse-m3u8)
 [![codecov](https://codecov.io/gh/shinnn/parse-m3u8/branch/master/graph/badge.svg)](https://codecov.io/gh/shinnn/parse-m3u8)
 
 A [Node.js](https://nodejs.org/) module to parse [M3U8](https://en.wikipedia.org/wiki/M3U#M3U8)
